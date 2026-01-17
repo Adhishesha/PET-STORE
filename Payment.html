@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Payment - Lucy Pet Store</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h2>Payment Page</h2>
+
+<h3>User Details</h3>
+<input type="text" id="username" placeholder="Full Name"><br><br>
+<input type="text" id="contact" placeholder="Contact Number"><br><br>
+
+<h3>Select Payment Method</h3>
+
+<label>
+    <input type="radio" name="pay" value="GPay" onclick="showFields()"> GPay
+</label><br>
+
+<label>
+    <input type="radio" name="pay" value="PhonePe" onclick="showFields()"> PhonePe
+</label><br>
+
+<label>
+    <input type="radio" name="pay" value="Card" onclick="showFields()"> Debit / Credit Card
+</label><br>
+
+<label>
+    <input type="radio" name="pay" value="COD" onclick="showFields()"> Cash on Delivery
+</label><br><br>
+
+<!-- CARD DETAILS -->
+<div id="cardFields" style="display:none; border:1px solid #ccc; padding:10px;">
+    <h4>Card Details</h4>
+    <input type="text" id="cardNumber" placeholder="Card Number"><br><br>
+    <input type="text" id="cardName" placeholder="Card Holder Name"><br><br>
+    <input type="text" id="expiry" placeholder="Expiry MM/YY"><br><br>
+    <input type="password" id="cvv" placeholder="CVV"><br><br>
+</div>
+
+<!-- DELIVERY ADDRESS (FIXED & CLEAR) -->
+<div id="addressField" style="display:none; border:1px solid #ccc; padding:10px;">
+    <h4>Delivery Address</h4>
+    <textarea id="address" rows="4" cols="40"
+        placeholder="House No, Street, Area, City, Pincode"></textarea>
+</div>
+
+<br>
+<button onclick="makePayment()">Pay Now</button>
+
+<script src="payment.js"></script>
+</body>
+</html>
+
+
+
+
