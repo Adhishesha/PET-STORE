@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lucy Online Pet Store</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Lucy Online Pet Store 🐾</h1>
+    <p>Buy Pet Products Online</p>
+</header>
+
+<nav class="menu">
+    <button onclick="showCategory('dog')">Dog</button>
+    <button onclick="showCategory('cat')">Cat</button>
+    <button onclick="showCategory('bird')">Bird</button>
+    <button onclick="showCategory('fish')">Fish</button>
+</nav>
+
+<section id="products"></section>
+
+<section class="cart">
+    <h2>🛒 Shopping Cart</h2>
+    <ul id="cartItems"></ul>
+    <h3>Total: ₹<span id="total">0</span></h3>
+    <button onclick="goToPayment()">Proceed to Payment</button>
+</section>
+
+<script src="script.js"></script>
+<h2>Checkout</h2>
+
+</body>
+</html>
+<h3>Customer Feedback</h3>
+
+<input type="text" id="fbName" placeholder="Your Name"><br><br>
+
+<textarea id="fbMessage" placeholder="Write your feedback here..." rows="4" cols="40"></textarea><br><br>
+
+<button onclick="saveFeedback()">Submit Feedback</button>
+
+
+
+
